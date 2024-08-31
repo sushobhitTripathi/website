@@ -2,7 +2,7 @@
     font-family: montserrat;
 }
 body{
-    background: f1fbff;
+    background: #f1fbff;
 }
 .section-padding{
     padding: 100px,0;
@@ -79,6 +79,27 @@ body{
 .team .card{
     box-shadow: 15px 15px 40px rgba(0,0,0,0.15) ;
 }
+
+/* @keyframes animation {
+    0%, 100%{
+        opacity: 1;
+
+    }
+    50%{
+        opacity: 0.5;
+    }
+}
+.about-us .card-body{
+    position: fixed;
+}
+.about-us .card-body{
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+} */
 
 
 /*=================responsive css==========*/

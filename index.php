@@ -11,31 +11,11 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#"><span class="text-warning">Boots</span>trap</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-          </li>
-      </div>
-    </div>
-  </nav>
+  <?php
+  include('navbar.php');
+  ?>
 
-  <!-----------corousel----------->
+  <!-----------carousel----------->
 
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -78,6 +58,9 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
+  <!------------about------------->
+
   <section id="about" class="about section-padding">
     <div class="container mt-5">
       <div class="row">
@@ -103,7 +86,8 @@
   </section>
 
   <!-----------services------------>
-  <section id="services" class="services services-padding">
+
+  <section id="services" class="services section-padding">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -123,7 +107,7 @@
                 Commodi eum aliquam at dignissimos quisquam veniam necessitatibus
                 magni iusto? Excepturi eligendi ab praesentium magni, eum nesciunt.</p>
             </div>
-            <button id="service-btn" class="btn btn-warning text-dark"><a href="#services">Read More</a></button>
+            <button id="service-btn" class="btn btn-warning text-dark"><a href="services.php">Read More</a></button>
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-4">
@@ -135,7 +119,7 @@
                 Commodi eum aliquam at dignissimos quisquam veniam necessitatibus
                 magni iusto? Excepturi eligendi ab praesentium magni, eum nesciunt.</p>
             </div>
-            <button id="service-btn" class="btn btn-warning text-dark"><a href="#services">Read More</a></button>
+            <button id="service-btn" class="btn btn-warning text-dark"><a href="services.php">Read More</a></button>
           </div>
         </div>
         <div class="col-12 col-md-12 col-lg-4">
@@ -147,7 +131,7 @@
                 Commodi eum aliquam at dignissimos quisquam veniam necessitatibus
                 magni iusto? Excepturi eligendi ab praesentium magni, eum nesciunt.</p>
             </div>
-            <button id="service-btn" class="btn btn-warning text-dark"><a href="#services">Read More</a></button>
+            <button id="service-btn" class="btn btn-warning text-dark"><a href="services.php">Read More</a></button>
           </div>
         </div>
       </div>
@@ -211,7 +195,7 @@
 
   <!------------team----------->
 
-  <section id="team" class="team team-padding mt-5">
+  <section id="team" class="team section-padding mt-5">
     <div class="container mb-5">
       <div class="row">
         <div class="col-md-12">
@@ -286,53 +270,18 @@
     </div>
   </section>
 
-  <!-----------Contact----------->
+  <!----------Contact---------->
 
-  <section id="contact" class="contact contact-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-header text-center pb-5">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, ipsa!</p>
-          </div>
-        </div>
-      </div>
-      <div class="row m-0">
-        <div class="col md-12 p-0 pt-4 pb-4">
-         <form action="contact.php" method="post" class="bg-light p-4 m-auto">
-         <div class="row">
-            <div class="col-md-12">
-              <div class="mb-3">
-                <input type="text" name="name" placeholder="Your Full Name" required class="form-control">
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="mb-3">
-                <input type="email" name="email" placeholder="Your Email" required class="form-control">
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="mb-3">
-                <textarea name="query" placeholder="Your Query Here" required class="form-control" rows="3"></textarea>
-              </div>
-            </div>
-            <button name="submit" class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
-          </div>
-         </form>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php include('contact.php'); ?>
 
-  <!---------footer--------->
+  <!----------footer----------->
 
-  <footer class="bg-dark p-2 text-center">
-    <div class="container">
-      <p class="text-white">All Right Reserved @Bootstrap</p>
-    </div>
-  </footer>
+  <?php include('footer.php'); ?>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
