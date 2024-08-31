@@ -79,6 +79,17 @@ body{
 .team .card{
     box-shadow: 15px 15px 40px rgba(0,0,0,0.15) ;
 }
+.about-card {
+    padding: 20px;
+    border: 1px solid #000000;
+    transition: background-color 0.3s ease;
+}
+#about-card-section .about-card:hover {
+    background-color: #ff0000;
+}
+
+
+/*==========Animation==========*/
 
 /* @keyframes animation {
     0%, 100%{
