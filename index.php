@@ -300,24 +300,24 @@
       </div>
       <div class="row m-0">
         <div class="col md-12 p-0 pt-4 pb-4">
-         <form action="#" class="bg-light p-4 m-auto">
+         <form action="contact.php" method="post" class="bg-light p-4 m-auto">
          <div class="row">
             <div class="col-md-12">
               <div class="mb-3">
-                <input type="text" placeholder="Your Full Name" required class="form-control">
+                <input type="text" name="name" placeholder="Your Full Name" required class="form-control">
               </div>
             </div>
             <div class="col-md-12">
               <div class="mb-3">
-                <input type="email" placeholder="Your Email" required class="form-control">
+                <input type="email" name="email" placeholder="Your Email" required class="form-control">
               </div>
             </div>
             <div class="col-md-12">
               <div class="mb-3">
-                <textarea placeholder="Your Query Here" required class="form-control" rows="3"></textarea>
+                <textarea name="query" placeholder="Your Query Here" required class="form-control" rows="3"></textarea>
               </div>
             </div>
-            <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
+            <button name="submit" class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
           </div>
          </form>
         </div>
